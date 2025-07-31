@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senthilkumaran - Certified Fitness Coach</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom styles -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hover-lift {
+            transition: transform 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-slate-800 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <span class="text-white text-xl font-bold">Senthilkumaran</span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-white hover:text-green-400 transition-colors">About</a>
+                <a href="#services" class="text-white hover:text-green-400 transition-colors">Services</a>
+                <a href="#testimonials" class="text-white hover:text-green-400 transition-colors">Testimonials</a>
+                <a href="#consultation" class="text-white hover:text-green-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('./Senthil-57.png');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Senthilkumaran</h1>
+                <h2 class="text-2xl md:text-3xl text-green-400 mb-6">Certified Fitness Coach at Fittr</h2>
+                <p class="text-xl text-white mb-8 italic">"If you're looking for weight loss, I'm not the right person. But I can promise a better quality of life in your 40s, 50s, 60s and beyond."</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#consultation" class="bg-green-600 text-white py-3 px-6 rounded-md hover:bg-green-700 transition-colors font-bold inline-flex items-center justify-center">
+                        <i class="fas fa-calendar-check mr-2"></i> Book Free Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="./thumbnail.jpg" alt="Senthilkumaran" class="rounded-lg shadow-lg mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <p class="text-lg mb-6">I'm Senthilkumaran, a certified fitness coach with over 10 years of experience helping clients achieve their fitness goals.</p>
+                    <p class="text-lg mb-6">My approach focuses on sustainable fitness practices that improve quality of life rather than just weight loss.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2023 Senthilkumaran. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-green-400 transition-colors"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white hover:text-green-400 transition-colors"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white hover:text-green-400 transition-colors"><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
