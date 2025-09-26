@@ -14,25 +14,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Spacer for fixed header -->
+    <div class="h-16"></div>
     <!-- Navigation -->
-    <nav class="bg-slate-800 sticky top-0 z-50">
+    <nav class="bg-slate-800 fixed top-0 w-full z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="flex items-center">
-                <img src="./thumbnail.jpg" alt="Senthilkumaran" class="h-10 w-10 rounded-full mr-2">
-                <span class="text-white font-bold text-xl">Senthilkumaran</span>
+            <a href="#" class="flex flex-col items-start">
+                <div class="w-full">
+                    <span class="text-black font-bold text-xl">Senthilkumaran CR</span>
+                </div>
+                <div class="w-full flex justify-end">
+                    <span class="text-yellow-400 text-sm">YOURBALANCEDCOACH</span>
+                </div>
             </a>
             
             <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-6">
-                <a href="#" class="text-white hover:text-green-400 transition-colors">Home</a>
-                <a href="#services" class="text-white hover:text-green-400 transition-colors">Services</a>
-                <a href="#about" class="text-white hover:text-green-400 transition-colors">About</a>
-                <a href="#testimonials" class="text-white hover:text-green-400 transition-colors">Reviews</a>
-                <a href="#consultation" class="text-white hover:text-green-400 transition-colors">Book Consultation</a>
+                <a href="#hero" class="text-black hover:text-green-400 transition-colors">Home</a>
+                <a href="#services" class="text-black hover:text-green-400 transition-colors">Services</a>
+                <a href="#about" class="text-black hover:text-green-400 transition-colors">About</a>
+                <a href="#testimonials" class="text-black hover:text-green-400 transition-colors">Reviews</a>
+                <a href="#consultation" class="text-black hover:text-green-400 transition-colors">Book Consultation</a>
             </div>
             
             <!-- Mobile Menu Button -->
-            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+            <button class="md:hidden text-black focus:outline-none" id="mobile-menu-button">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
@@ -40,30 +46,34 @@
         <!-- Mobile Menu -->
         <div class="md:hidden hidden bg-slate-700" id="mobile-menu">
             <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
-                <a href="#" class="text-white hover:text-green-400 transition-colors">Home</a>
-                <a href="#services" class="text-white hover:text-green-400 transition-colors">Services</a>
-                <a href="#about" class="text-white hover:text-green-400 transition-colors">About</a>
-                <a href="#testimonials" class="text-white hover:text-green-400 transition-colors">Reviews</a>
-                <a href="#consultation" class="text-white hover:text-green-400 transition-colors">Book Consultation</a>
+                <a href="#hero" class="text-black hover:text-green-400 transition-colors">Home</a>
+                <a href="#services" class="text-black hover:text-green-400 transition-colors">Services</a>
+                <a href="#about" class="text-black hover:text-green-400 transition-colors">About</a>
+                <a href="#testimonials" class="text-black hover:text-green-400 transition-colors">Reviews</a>
+                <a href="#consultation" class="text-black hover:text-green-400 transition-colors">Book Consultation</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('./Senthil-57.png');">
-        <div class="absolute inset-0 bg-black opacity-60"></div>
+    <section id="hero" class="relative py-20 md:py-32 bg-top" style="padding-top: 6rem; background-color: #ECFDF5;">
         <div class="container mx-auto px-4 relative z-10">
-            <div class="max-w-2xl" data-aos="fade-right">
-                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Senthilkumaran</h1>
-                <h2 class="text-2xl md:text-3xl text-green-400 mb-6">Certified Fitness Coach at Fittr</h2>
-                <p class="text-xl text-white mb-8 italic">"If you're looking for weight loss, I'm not the right person. But I can promise a better quality of life in your 40s, 50s, 60s and beyond."</p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4" data-aos="fade-up" data-aos-delay="200">
-                    <a href="#consultation" class="bg-green-600 text-white py-3 px-6 rounded-md hover:bg-green-700 transition-colors font-bold inline-flex items-center justify-center">
-                        <i class="fas fa-calendar-check mr-2"></i> Book Free Consultation
-                    </a>
-                    <a href="https://www.fittr.com/coaching/senthilkumaran-c-613397/?skill=fitness-and-nutrition" target="_blank" class="bg-white text-slate-800 py-3 px-6 rounded-md hover:bg-gray-100 transition-colors font-bold inline-flex items-center justify-center">
-                        <i class="fas fa-external-link-alt mr-2"></i> View on Fittr
-                    </a>
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold text-black mb-4">Senthilkumaran CR</h1>
+                    <h2 class="text-2xl md:text-3xl text-green-600 mb-6">Certified Fitness Coach</h2>
+                    <p class="text-xl text-black mb-8 italic">"If you're looking for weight loss, I'm not the right person. But I can promise a better quality of life in your 40s, 50s, 60s and beyond."</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#consultation" class="bg-green-600 text-white py-3 px-6 rounded-md hover:bg-green-700 transition-colors font-bold inline-flex items-center justify-center">
+                            <i class="fas fa-calendar-check mr-2"></i> Book Free Consultation
+                        </a>
+                        <a href="https://www.fittr.com/coaching/senthilkumaran-c-613397/?skill=fitness-and-nutrition" target="_blank" class="bg-white text-slate-800 py-3 px-6 rounded-md hover:bg-gray-100 transition-colors font-bold inline-flex items-center justify-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> View on Fittr
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center mt-8 md:mt-0" data-aos="fade-left">
+                    <video src="./video.mp4" controls class="rounded-lg shadow-xl max-h-96 object-cover" autoplay muted loop></video>
                 </div>
             </div>
         </div>
@@ -256,34 +266,11 @@
             <div class="flex flex-col md:flex-row gap-8 max-w-4xl mx-auto">
                 <!-- Left Column: Form -->
                 <div class="md:w-1/2 bg-white p-6 rounded-lg shadow-md" data-aos="fade-right">
-                    <h3 class="text-xl font-bold mb-4">Schedule a Call</h3>
-                    <form id="consultation-form" class="space-y-4">
-                        <div>
-                            <label for="name" class="block text-gray-700 mb-1">Your Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
-                        </div>
-                        <div>
-                            <label for="email" class="block text-gray-700 mb-1">Email Address</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
-                        </div>
-                        <div>
-                            <label for="goal" class="block text-gray-700 mb-1">Your Fitness Goal</label>
-                            <select id="goal" name="goal" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
-                                <option value="">Select your primary goal</option>
-                                <option value="longevity">Improve Longevity</option>
-                                <option value="health">Better Overall Health</option>
-                                <option value="strength">Build Strength</option>
-                                <option value="postpartum">Postpartum Fitness</option>
-                                <option value="senior">Senior Fitness</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-gray-700 mb-1">Additional Information</label>
-                            <textarea id="message" name="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-green-600 text-white py-3 px-6 rounded-md hover:bg-green-700 transition-colors font-bold">Book a Call</button>
-                    </form>
+                    <h3 class="text-xl font-bold mb-4">Book a Consultation</h3>
+                    <p class="text-gray-600 mb-6">Schedule a 15-minute call with me to discuss your fitness goals and how I can help you achieve them.</p>
+                    <a href="https://calendly.com/senthilkumaran/15min" target="_blank" class="w-full bg-green-600 text-white py-4 px-6 rounded-md hover:bg-green-700 transition-colors font-bold text-center block text-lg">
+                        <i class="fas fa-calendar-check mr-2"></i> Book a Call
+                    </a>
                 </div>
                 
                 <!-- Right Column: Calendly -->
@@ -394,8 +381,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:contact@senthilkumaran.com" class="inline-flex items-center hover:text-green-400 transition-colors">
-                                <i class="fas fa-envelope text-xl mr-2"></i> Email Me
+                            <a href="https://www.facebook.com/senthilkumaran.chinnadurai.37/" target="_blank" class="inline-flex items-center hover:text-green-400 transition-colors">
+                                <i class="fab fa-facebook text-xl mr-2"></i> senthilkumarancr
                             </a>
                         </li>
                     </ul>
@@ -411,7 +398,7 @@
             </div>
             
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 Senthilkumaran Fitness Coaching. All rights reserved.</p>
+                <p>&copy; 2023 Senthilkumaran CR. All rights reserved.</p>
             </div>
         </div>
     </footer>
