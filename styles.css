@@ -7,18 +7,67 @@ html {
 
 /* Testimonial slider styles */
 .testimonials-track {
+    transition: transform 0.3s ease;
     width: 300%; /* 3 slides */
 }
 
-@media (max-width: 768px) {
+/* Critical mobile fixes */
+@media (max-width: 640px) {
+    .testimonial-slider {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .testimonial-slide {
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+    }
+    
     .testimonials-track {
-        width: 300%; /* 3 slides at 100% each */
+        padding: 0 8px;
+        width: 300%; /* Keep 3 slides */
+    }
+    
+    /* Ensure text doesn't overflow */
+    .testimonial-slide p {
+        font-size: 12px !important;
+        line-height: 1.4 !important;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .testimonial-slide h4 {
+        font-size: 13px !important;
+        line-height: 1.2 !important;
+    }
+    
+    /* Smaller stars on mobile */
+    .testimonial-slide .fas.fa-star {
+        font-size: 10px !important;
+    }
+}
+
+/* Tablet and larger screens */
+@media (min-width: 641px) and (max-width: 768px) {
+    .testimonials-track {
+        width: 300%;
     }
 }
 
 /* Active testimonial indicator */
 .testimonial-indicator.active {
-    background-color: #059669; /* green-600 */
+    background-color: #059669 !important; /* green-600 */
+}
+
+/* Navigation arrow hover effects */
+.testimonial-slider button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+/* Smooth transitions */
+.testimonials-track {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Custom hover effects */
